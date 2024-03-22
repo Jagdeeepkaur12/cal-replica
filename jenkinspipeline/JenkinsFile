@@ -8,7 +8,7 @@ pipeline {
         stage('Testing Env'){
             steps{
                 
-                sh 'firebase  deploy -P cal-test-575bd --token "$FIREBASE_DEPLOY_TOKEN"'
+                sh 'firebase deploy -P cal-test-575bd --token "$FIREBASE_DEPLOY_TOKEN"'
 
                 }
             }
