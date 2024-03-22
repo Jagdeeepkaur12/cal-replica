@@ -16,7 +16,7 @@ stages{
         stage('Staging Env'){
             steps{
                
-                sh 'firebase  deploy -p --token "$FIREBASE_DEPLOY_TOKEN"'
+                sh 'firebase  deploy -p cal-stage-887b8 --token "$FIREBASE_DEPLOY_TOKEN"'
                 echo "Staging"
                 }
             }
@@ -24,7 +24,7 @@ stages{
         stage('Production Env'){
             steps{
                
-                sh 'firebase  deploy -P  --token "$FIREBASE_DEPLOY_TOKEN"'
+                sh 'firebase  deploy -P cal-production-3a101 --token "$FIREBASE_DEPLOY_TOKEN"'
                 echo "Production"
                 }
         }
