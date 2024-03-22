@@ -17,7 +17,7 @@ stages{
             steps{
                
                  sh 'firebase  deploy -P cal-stage-887b8 --token "$FIREBASE_DEPLOY_TOKEN"'
-                echo "Staging"
+               
                 }
             }
 
@@ -25,7 +25,7 @@ stages{
             steps{
                
                  sh 'firebase  deploy -P cal-production-3a101 --token "$FIREBASE_DEPLOY_TOKEN"'
-                echo "Production"
+                
                 }
         }
 }
