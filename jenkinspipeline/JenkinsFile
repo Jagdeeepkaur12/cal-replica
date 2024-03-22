@@ -16,7 +16,7 @@ stages{
         stage('Staging Env'){
             steps{
                
-                // sh 'firebase  deploy -P class-excercise2-stage --token "$FIREBASE_DEPLOY_TOKEN"'
+                // sh 'firebase  deploy -P cal-stage-887b8 --token "$FIREBASE_DEPLOY_TOKEN"'
                 echo "Staging"
                 }
             }
